@@ -6,7 +6,8 @@ name=$(cat $1/.godir)
 # Get the Revel mode from the REVEL_MODE environment variable (defaults to "prod")
 env=$REVEL_MODE
 if [ -z "$env" ]; then
-  env=""
+    env=""
+    PORT=""
 fi
 
 cat <<EOF
